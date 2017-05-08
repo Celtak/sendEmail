@@ -1,19 +1,19 @@
 <?php
 
 /**
- * Class sendMail
+ * Class sendEmail
  *
  * A class to send a email with php
  * - set the sender
  * - set the reply (if send(true) then sender = reply)
- * - set the objet
+ * - set the subject
  * - set the message
  * - send the email (with parameter: email address)
  *
  * Help by: https://openclassrooms.com/courses/e-mail-envoyer-un-e-mail-en-php
  */
 
-class sendMail
+class sendEmail
 {
 
     private $sender = array(
@@ -28,7 +28,7 @@ class sendMail
 
     private $exp_equal_reply;
 
-    private $objet;
+    private $subject;
 
     private $msg;
 
@@ -47,6 +47,7 @@ class sendMail
     */
 
     private $contain;
+
 
     /**
      * sendMail constructor.
@@ -98,12 +99,12 @@ class sendMail
     }
 
     /**
-     * @param $objet
+     * @param $subject
      */
-    public function set_objet($objet)
+    public function set_objet($subject)
     {
 
-        $this->objet = $objet;
+        $this->subject = $subject;
 
     }
 
@@ -169,7 +170,7 @@ class sendMail
 
         $this->prepare($email);
 
-        mail($email, $this->objet, $this->contain, $this->header);
+        mail($email, $this->subject, $this->contain, $this->header);
 
     }
 
