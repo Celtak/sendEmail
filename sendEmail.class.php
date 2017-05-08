@@ -48,7 +48,6 @@ class sendMail
 
     private $contain;
 
-
     /**
      * sendMail constructor.
      *
