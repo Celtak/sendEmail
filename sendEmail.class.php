@@ -101,7 +101,7 @@ class sendEmail
     /**
      * @param $subject
      */
-    public function set_objet($subject)
+    public function set_subject($subject)
     {
 
         $this->subject = $subject;
