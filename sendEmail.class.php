@@ -93,8 +93,8 @@ class sendEmail
     public function set_reply($name, $address)
     {
 
-        $this->reply['nom'] = $name;
-        $this->reply['adresse'] = $address;
+        $this->reply['name'] = $name;
+        $this->reply['address'] = $address;
 
     }
 
