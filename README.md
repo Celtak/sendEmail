@@ -27,11 +27,11 @@ Instantiate a new object with the sendEmail class to include a boolean. True if 
 
 | Method    | Syntax    | Information |
 | --------- | --------- | ------------ |
-| Set the Sender | set_sender ( name, address ) | |
-| Set the Reply | set_reply ( name, address ) | Optional: required only if it was instantiate with false|
-| Set the Subject | set_subject ( subject ) | |
-| Set the Message | set_msg ( message ) | In **HTML** |
-| Send the Email | send ( address ) | Required to send email but before use the methods: set_sender, set_reply (optional), set_subject, set_msg| 
+| Set the Sender | set_sender (name, address) | |
+| Set the Reply | set_reply (name, address) | Optional: required only if it was instantiate with false|
+| Set the Subject | set_subject (subject) | |
+| Set the Message | set_msg (message) | In **HTML** |
+| Send the Email | send (address) | Required to send email but before use the methods: set_sender, set_reply (optional), set_subject, set_msg| 
 
 ## Usage
 
